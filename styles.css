@@ -11,4 +11,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-#page;
+#page-wrapper {
+  position: relative;
+}
