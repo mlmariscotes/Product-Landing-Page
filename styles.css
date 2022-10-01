@@ -97,9 +97,25 @@ nav {
 }
 
 @media (mmax-width: 650px) {
-  nav ul {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
   }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav ul {
+  width: 34vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #hero {
@@ -202,4 +218,76 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product h2 {
+  margin-top: 15px;
+}
+
+.product ol li {
+  padding: 5px 0;
+}
+
+.product button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul li {
+  padding: 0 10px;
+}
+
+footer span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
 }
